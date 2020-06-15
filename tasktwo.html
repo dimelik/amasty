@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    items = ["red", "blue", "green", "yellow", "lime", "magenta", "black", "gold", "gray", "tomato"]
+
+    displayItems(items)
+    function displayItems(v1, v2, v3, v4, v5)
+    {
+        document.write("<br>" + items[Math.floor(Math.random() * items.length)]).style('font-color', items[Math.floor(Math.random() * items.length)])
+        document.write(' ' + items[Math.floor(Math.random() * items.length)]).style('font-color', items[Math.floor(Math.random() * items.length)])
+        document.write(' ' + items[Math.floor(Math.random() * items.length)]).style('font-color', items[Math.floor(Math.random() * items.length)])
+        document.write(' ' + items[Math.floor(Math.random() * items.length)]).style('font-color', items[Math.floor(Math.random() * items.length)])
+        document.write(' ' + items[Math.floor(Math.random() * items.length)] + "<br>").style('font-color', items[Math.floor(Math.random() * items.length)])
+    }
+</script>
+</body>
+</html>
