@@ -32,5 +32,6 @@ final class Stroop
         echo "<div>{$this->getWord()}, {$this->getWord()}, {$this->getWord()}, {$this->getWord()},{$this->getWord()}</div>";
         echo "<div>{$this->getWord()}, {$this->getWord()}, {$this->getWord()}, {$this->getWord()},{$this->getWord()}</div>";
         echo "<div>{$this->getWord()}, {$this->getWord()}, {$this->getWord()}, {$this->getWord()},{$this->getWord()}</div>";
+        return print "Test success";
     }
 }

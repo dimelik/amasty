@@ -15,6 +15,8 @@ $second->getClassname();
 $first->getLetter();
 $second->getLetter();
 echo "<br><br>";
+
+
 /**
  * 2)
  */
@@ -23,3 +25,7 @@ $items = ["red", "blue", "green", "yellow", "lime", "magenta", "black", "gold", 
 $test = new Stroop($items);
 $str = $test->getTest();
 
+
+/**
+ *3 консоль, файл 3.php
+ */
