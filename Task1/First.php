@@ -1,6 +1,6 @@
 <?php
 
-final class First extends Classname
+final class First extends Base
 {
     public function getLetter()
     {
