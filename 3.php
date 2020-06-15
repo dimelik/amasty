@@ -1,9 +1,16 @@
 <?php
 
 $arr = explode(" ", $argv[1]);
+function my_is_int($input){
+    if($input[0] == '-')
+    {
+        return ctype_digit(substr($input, 1));
+    }
+    return ctype_digit($input);
+}
 $return_array = [];
 foreach ($arr as $val) {
-    if (is_numeric($val)) {
+    if (my_is_int($val)) {
         $return_array[] = (int)$val;
     }
 }

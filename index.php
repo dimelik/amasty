@@ -29,3 +29,9 @@ $str = $test->getTest();
 /**
  *3 консоль, файл 3.php
  */
+
+/**
+ * 4
+ */
+require_once "Task4/4.php";
+print "<form method=\"post\" action=\"Task4/4.php\">Football club: <input type=\"text\" name=\"club\"/><input type=\"submit\" name=\"submit\" value=\"GO!\"/></form>";
