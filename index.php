@@ -1,37 +1,9 @@
 <?php
-/**
- * 1)
- */
-require_once "Task1/Base.php";
-require_once "Task1/First.php";
-require_once "Task1/Second.php";
 
-
-$first = new First();
-$second = new Second();
-
-$first->getClassname();
-$second->getClassname();
-$first->getLetter();
-$second->getLetter();
-echo "<br><br>";
-
-
-/**
- * 2)
- */
-require_once "Task2/Stroop.php";
-$items = ["red", "blue", "green", "yellow", "lime", "magenta", "black", "gold", "gray", "tomato"];
-$test = new Stroop($items);
-$str = $test->getTest();
-
-
-/**
- *3 консоль, файл 3.php
- */
-
-/**
- * 4
- */
-require_once "Task4/4.php";
-print "<form method=\"post\" action=\"Task4/4.php\">Football club: <input type=\"text\" name=\"club\"/><input type=\"submit\" name=\"submit\" value=\"GO!\"/></form>";
+echo <<<_END
+<a href="Task1/index.php">Перейдите на задание 1</a><br>
+<a href="Task2/index.php">Перейдите на задание 2</a><br>
+<p>Для запуска здания 3 необходимо запустить в консоли php 3.php "" и передать входные значения в разделяя их пробелом</p>
+<a href="Task4/index.php">Перейдите на задание 4</a><br>
+<a href="Task5/index.php">Перейдите на задание 5</a><br>
+_END;
