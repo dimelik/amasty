@@ -4,13 +4,13 @@ final class Footbal
 {
     private $post;
     private $firstYear;
-    static private $year;
+    private $year;
 
     public function __construct($post = null, $startYear)
     {
         $this->post = $post;
         $this->firstYear = $startYear;
-        self::$year = $startYear;
+        $this->year = $startYear;
     }
 
     private function is_url_exist($url)
@@ -47,7 +47,7 @@ final class Footbal
                 foreach ($array as $value) {
                     $pos = strpos($value, $this->post);
                     if ($pos !== false) {
-                        echo "<tr><td>" . 'Season ' . self::$year++ . '-' . self::$year . ':' . strstr($value, '.',
+                        echo "<tr><td>" . 'Season ' . $this->year++ . '-' . $this->year . ':' . strstr($value, '.',
                                 true) . "</td></tr>";
                     }
                 }
