@@ -14,7 +14,6 @@ if(isset($_POST)){
 
     $post = sanitizeString($_POST['club']);
 
-    $setFirst = new Footbal($post);
-    $setFirst->setFirstYear(9);
+    $setFirst = new Footbal($post, 9);
     $setFirst->getPlace();
 }
